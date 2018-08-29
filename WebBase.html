@@ -4,6 +4,15 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+    <script>
+        function changeText(){
+            document.getElementById("f").innerHTML = "This is function effect";
+        }
+        function expandText(){
+            document.getElementById("g").style.fontSize = "30px"
+        }
+    </script>
 </head>
 
 <body>
@@ -33,6 +42,26 @@
 </button>
 <h4 id="d" style="display: none">This is javaScript</h4>
 
+<p></p>
+<button type="button" onclick="changeText()">
+    Click Me
+</button>
+<h5 id="f">This is javaScript</h5>
+
+<button type="button" onclick="expandText()">
+    CLick Me
+</button>
+<h6 id="g">This is JavaScript</h6>
+
+<button type="button" onclick="hideText()">
+        CLick Me
+    </button>
+<h6 id="h">This is JavaScript</h6>
+
+<button type="button" onclick="insertText()">
+        CLick Me
+    </button>
+<h3 id="i" style="display: none">This is JavaScript</h3>
 
 
 
@@ -64,7 +93,11 @@
 
 </div>
 
-
+<script src="MyScript.js">
+    function hideText(){
+        document.getElementById('h').style.display = 'none'
+    }
+</script>
 
 
 
